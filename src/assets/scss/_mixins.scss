@@ -1,0 +1,76 @@
+@mixin lg-btn  {
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    width:85%;
+}
+
+@mixin login-icon{
+    background: linear-gradient(98.26deg, #ec5252 0.93%, #3b4658 104.74%);
+    box-shadow: 0px 15px 30px #e5e5e5;
+    border-radius: 50%;
+    margin:1rem auto;
+
+    span{
+        font-family: $poppins;
+        font-style: normal;
+        font-weight: bold;
+        color: #ffffff;
+        margin: auto;
+    }
+}
+
+@mixin signup-btn{
+    display: block;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    button{
+      @include lg-btn;
+      background: #EC5252;
+      color:white;
+      margin:1rem auto;
+
+    }
+}
+
+@mixin lg-text{
+    font-weight: 600;
+    margin:1em auto;
+    text-align: left;
+    line-height: 31px;
+    width: 80%;
+    font-family: $poppins;
+}
+
+@mixin vs-input-edit{
+    .vs-input-parent {
+        width: 80%;
+        margin: auto;
+        input {
+            border-radius: 0;
+            font-size: 1.2rem;
+            margin: auto;
+            width: 100%;
+            height: 3rem;
+        }
+        label {
+            font-size: 1.2rem;
+            margin: auto;
+        }
+    }
+}
+@mixin qtn {
+    font-family: $poppins;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    width:80%;
+    span {
+        color:$orange;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
