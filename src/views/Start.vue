@@ -235,6 +235,7 @@
 				height: 14rem;
 				transition: .6s all linear;
 
+
 				span {
 					font-size: 12rem;
 					transition: .6s all linear;

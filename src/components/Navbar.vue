@@ -1,39 +1,21 @@
 <template>
-	<div ref="nav" id="nav" v-if="true">
+	<footer ref="nav" id="nav" v-if="true">
 		<router-link to="/home">
-			<svg @click="visible=!visible" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-				<path
-					v-if="visible"
-					fill="#ec5252"
-					stroke-width="2px"
-					stroke-linejoin="round"
-					stroke-linecap="round"
-					stroke="#ec5252"
-					id="XMLID_219_"
-					d="m30.854,16.548c-0.331,0.882 -1.151,1.452 -2.09,1.452l-0.764,0l0,11c0,0.552 -0.448,1 -1,1l-6,0l0,-7c0,-2.757 -2.243,-5 -5,-5s-5,2.243 -5,5l0,7l-6,0c-0.552,0 -1,-0.448 -1,-1l0,-11l-0.765,0c-0.939,0 -1.759,-0.569 -2.09,-1.451c-0.331,-0.882 -0.088,-1.852 0.62,-2.47l11.679,-11.06c1.434,-1.357 3.679,-1.357 5.112,0l11.707,11.086c0.678,0.591 0.922,1.561 0.591,2.443z"
-				/>
-				<path
-					v-else
-					fill="none"
-					stroke-width="2px"
-					stroke-linejoin="round"
-					stroke-linecap="round"
-					stroke="#ec5252"
-					id="XMLID_219_"
-					d="m30.854,16.548c-0.331,0.882 -1.151,1.452 -2.09,1.452l-0.764,0l0,11c0,0.552 -0.448,1 -1,1l-6,0l0,-7c0,-2.757 -2.243,-5 -5,-5s-5,2.243 -5,5l0,7l-6,0c-0.552,0 -1,-0.448 -1,-1l0,-11l-0.765,0c-0.939,0 -1.759,-0.569 -2.09,-1.451c-0.331,-0.882 -0.088,-1.852 0.62,-2.47l11.679,-11.06c1.434,-1.357 3.679,-1.357 5.112,0l11.707,11.086c0.678,0.591 0.922,1.561 0.591,2.443z"
-				/>
-			</svg>
+			<img class="icon" src="../assets/icons/svgs/home.svg" alt="home" />
 		</router-link>
-		<router-link to="/about">
-			<img class="icon" src="../assets/icons/icons8_categorize_125px.png" alt />
+		<router-link to="/search">
+			<img class="icon" src="../assets/icons/svgs/search.svg" alt="search" />
 		</router-link>
-		<router-link to="/about">
-			<img class="icon" src="../assets/icons/icons8_book_125px.png" alt="home" />
+		<router-link to="/categories">
+			<img class="icon" src="../assets/icons/svgs/category.png" alt="category" />
 		</router-link>
-		<router-link to="/about">
+		<router-link to="/shelf">
+			<img class="icon" src="../assets/icons/svgs/book.png" alt="shelf" />
+		</router-link>
+		<router-link to="/profile">
 			<img class="icon" src="../assets/icons/icons8_person_125px.png" alt="home" />
 		</router-link>
-	</div>
+	</footer>
 </template>
 
 <script>
@@ -43,8 +25,8 @@
 		name: "App",
 		data() {
 			return {
-                visible:true
-            };
+				visible: true
+			};
 		},
 		computed: {
 			...mapGetters("login", ["getLogginPage"])
@@ -62,8 +44,8 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: $screen-size;
-		max-width: 450px;
-		box-shadow: 0px -5px 10px #f2f2f2;
+		// max-width: 450px;
+		border-top: 0.1px solid $lightgrayish;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -80,8 +62,21 @@
 			}
 		}
 		.icon {
-			width: 2rem;
+			width: 1.5rem;
 			// padding: 10%;
+		}
+		.cls-1 {
+			fill: #fff;
+			stroke: #ec5252;
+			stroke-width: 6px;
+		}
+
+		.cls-2 {
+			stroke: none;
+		}
+
+		.cls-3 {
+			fill: none;
 		}
 	}
 </style>

@@ -1,8 +1,10 @@
 <template>
-  <div id="app">
+<div>
+    <div id="app">
     <router-view/>
       <navbar />
   </div>
+</div>
 </template>
 
 <script>
@@ -22,6 +24,7 @@ export default {
 html,body{
   padding: 0;
   margin: 0;
+  // font-size: 11px;
 }
 #app { 
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -30,7 +33,7 @@ html,body{
   text-align: center;
   color: #2c3e50;
   width: $screen-size;
-  max-width: 450px;
+  // max-width: 450px;
   margin: auto;
 
 }

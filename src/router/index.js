@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Start from '../views/Start.vue'
 import Home from '../views/Home.vue'
+import Book from '../views/Book.vue'
+import Categories from '../views/Categories.vue'
+import NotFound from '../views/404.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +24,21 @@ const routes = [
     path:'/home',
     name:'Home',
     component:Home
+  },
+  {
+    path:'/book',
+    name:'Book',
+    component:Book
+  },
+  {
+    path:'/categories',
+    name:'Categories',
+    component:Categories
+  },
+  {
+    path:'*',
+    name:'NotFound',
+    component:NotFound,
   }
 ]
 
