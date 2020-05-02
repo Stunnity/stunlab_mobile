@@ -22,37 +22,43 @@
 			</div>
 		</div>
 		<NewArrivals />
-    
-	<v-row>
-		<div class="ctg-lst">
-			<div class="hd">
-				<p>Categories</p>
+		<v-row>
+			<div class="ctg-lst">
+				<div class="hd">
+					<p>Categories</p>
+				</div>
+				<div class="ctg-blocks">
+					<div v-for="(categ,i) in categories" :key="i" class="catg">{{ categ }}</div>
+				</div>
 			</div>
-			<div class="cgt-blocks">
-				
-			</div>
-		</div>
-	</v-row>
+		</v-row>
 	</div>
 </template>
 <script>
-import NewArrivals from '@/components/NewArrivals'
+	import NewArrivals from "@/components/NewArrivals";
 
 	export default {
 		name: "Home",
 		components: {
-            NewArrivals
-        },
+			NewArrivals
+		},
 		data() {
 			return {
 				visible: true,
-				
+				categories: [
+					"programming",
+					"science",
+					"mathematics",
+					"mechanics",
+					"languages",
+					"literature",
+					"ict",
+					"humanities"
+				]
 			};
 		},
-		methods: {
-		}
+		methods: {}
 	};
-
 </script>
 <style lang="scss" scoped>
 	@import "../assets/scss/main.scss";
@@ -63,8 +69,8 @@ import NewArrivals from '@/components/NewArrivals'
 			height: 15rem;
 			background-image: url("../assets/images/lib_image.png");
 			background-size: cover;
-            position: relative;
-            z-index: 0;
+			position: relative;
+			z-index: 0;
 
 			.search {
 				background: white;
@@ -90,6 +96,33 @@ import NewArrivals from '@/components/NewArrivals'
 					font-size: 1.1rem;
 					text-align: left;
 					margin-left: 1.5rem;
+				}
+			}
+		}
+		.ctg-lst {
+			width:100%;
+			.hd {
+				text-align: left;
+
+				p {
+					margin: 1rem;
+					font-size: 1.5rem;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+			}
+			.ctg-blocks {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-evenly;
+
+				.catg {
+					width: 8rem;
+					background-color: white;
+					box-shadow: 0 0 12px 1px #f3f3f3;
+					padding:.7rem;
+					margin: .5rem;
+					border-radius: 1rem;
 				}
 			}
 		}

@@ -65,18 +65,5 @@
 			width: 1.5rem;
 			// padding: 10%;
 		}
-		.cls-1 {
-			fill: #fff;
-			stroke: #ec5252;
-			stroke-width: 6px;
-		}
-
-		.cls-2 {
-			stroke: none;
-		}
-
-		.cls-3 {
-			fill: none;
-		}
 	}
 </style>

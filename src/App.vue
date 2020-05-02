@@ -24,7 +24,7 @@ export default {
 html,body{
   padding: 0;
   margin: 0;
-  // font-size: 11px;
+  /*font-size: 11px;*/
 }
 #app { 
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -35,6 +35,7 @@ html,body{
   width: $screen-size;
   // max-width: 450px;
   margin: auto;
+  margin-bottom: 4rem;
 
 }
 </style>

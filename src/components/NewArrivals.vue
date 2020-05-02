@@ -4,8 +4,10 @@
 			<p class="head">NEW ARRIVALS</p>
 			<swiper class="swiper" :options="swiperOption">
 				<swiper-slide v-for="(book,i) in books" :key="i">
-					<div class="book" >
-						<img src="../assets/images/books/book2.png" alt />
+						<div class="book" >
+						<router-link to="/book">
+							<img src="../assets/images/books/book2.png" alt />
+						</router-link>
 						<p class="tittle">{{book.tittle}}</p>
 						<p class="provider">{{book.provider}}</p>
 					</div>
@@ -25,7 +27,7 @@ import anime from 'animejs'
 				swiperOption: {
 					slidesPerView: 3,
 					spaceBetween: 10,
-					freeMode: true,
+					// freeMode: true,
 					speed: 10,
 					grabCursor: true
                 },
@@ -101,7 +103,7 @@ import anime from 'animejs'
         z-index: 1;
         position: relative;
         background-color: white;
-        box-shadow: 0px 15px 30px #E5E5E5;
+        box-shadow: 0px 5px 25px #E5E5E5;
         padding: .5rem 0;
 		.container {
             width:96%;

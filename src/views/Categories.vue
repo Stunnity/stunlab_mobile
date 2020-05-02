@@ -1,6 +1,6 @@
 <template>
 	<div class="categories">
-		<header-bar l-arrow="false" title="Categories"/>
+		<header-bar :l_arrow="false" title="Categories"/>
 		<div class="categories-lst">
 			<swiper class="swiper" :options="swiperOption">
 				<swiper-slide v-for="(category,i) in categories" :key="i">

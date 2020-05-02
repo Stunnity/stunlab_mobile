@@ -4,7 +4,9 @@ import Start from '../views/Start.vue'
 import Home from '../views/Home.vue'
 import Book from '../views/Book.vue'
 import Categories from '../views/Categories.vue'
+import Profile from '../views/Profile.vue'
 import NotFound from '../views/404.vue'
+import ReadBook from "../views/ReadBook";
 
 Vue.use(VueRouter)
 
@@ -31,9 +33,19 @@ const routes = [
     component:Book
   },
   {
+    path:'/book/read',
+    name:'ReadBook',
+    component: ReadBook
+  },
+  {
     path:'/categories',
     name:'Categories',
     component:Categories
+  },
+  {
+    path:'/profile',
+    name:'Profile',
+    component:Profile
   },
   {
     path:'*',

@@ -95,7 +95,7 @@
 							<vs-input v-model.lazy="form.password" placeholder="password" />
 						</div>
 						<div class="signup">
-							<vs-button block color="$orange">Login</vs-button>
+							<vs-button datatype="password" block color="$orange">Login</vs-button>
 						</div>
 						<p class="qtn">
 							Don't have an account?

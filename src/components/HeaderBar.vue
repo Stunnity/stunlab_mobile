@@ -2,7 +2,7 @@
 	<div class="header">
 		<vs-row>
 			<div class="container">
-				<div class="back-icon" v-if="appear">
+				<div class="back-icon" @click="$router.go(-1)" v-if="l_arrow">
 					<svg
 						width="14"
 						height="24"
@@ -39,12 +39,7 @@
 				default:true,
 				
 			}
-		},
-		computed: {
-			appear(){
-				return this.l_arrow
-			}
-		},
+		}
 	};
 </script>
 <style lang="scss" scoped>
@@ -56,7 +51,7 @@
 		.container {
 			width: 100%;
 			display: flex;
-			border-bottom: .1px solid $grayish;
+			border-bottom: 0.1px solid #C4C4C4;
 			.back-icon {
 				padding: .6rem;
 			}
