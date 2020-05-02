@@ -29,7 +29,36 @@ import anime from 'animejs'
 					spaceBetween: 10,
 					// freeMode: true,
 					speed: 10,
-					grabCursor: true
+					grabCursor: true,
+					breakpoints: {
+						// when window width is >= 250px
+						250: {
+							slidesPerView:2
+						},
+						// when window width is >= 320px
+						320: {
+							slidesPerView: 2.7,
+							spaceBetween: 10
+						},
+						// when window width is >= 450 px
+						450:{
+							slidesPerView:3
+						},
+						// when window width is >= 480px
+						480: {
+							slidesPerView:3.3 ,
+							spaceBetween: 30
+						},
+						// when window width is >= 550ox
+						550:{
+							slidesPerView:4,
+						},
+						// when window width is >= 640px
+						640: {
+							slidesPerView: 5,
+							spaceBetween: 40
+						}
+					}
                 },
                 books:[
                     {

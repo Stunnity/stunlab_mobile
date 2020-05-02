@@ -155,7 +155,6 @@
 				})
 			},
 			spaceLeave(){
-				console.log("space leave")
 				anime({
 					targets:".home .upspace",
 					height:0,
@@ -206,11 +205,12 @@
 				this.spaceGo()
 			},
 			signupForm(){
-				this.$router.push('home') ? console.log('yess') : console.log("noo");
+				this.$router.push('home');
 				this.LOGGINPAGE(false);
 			},
 			loginForm(){
-
+				this.$router.push('home');
+				this.LOGGINPAGE(false);
 			}
 
 		},
