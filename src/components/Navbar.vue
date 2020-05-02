@@ -1,6 +1,6 @@
 <template>
 	<footer ref="nav" id="nav" v-if="true">
-		<router-link to="/">
+		<router-link to="/home">
 			<img class="icon" src="../assets/icons/svgs/home.svg" alt="home" />
 		</router-link>
 		<router-link to="/search">
