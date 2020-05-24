@@ -16,15 +16,16 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "animejs": "^3.1.0",
     "core-js": "^3.6.4",
+    "lodash": "^4.17.11",
+    "numeral": "^2.0.6",
+    "pdfjs-dist": "^2.0.943",
     "register-service-worker": "^1.6.2",
     "swiper": "^5.3.6",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.0",
     "vue-router": "^3.1.5",
     "vuesax": "^4.0.1-alpha.16",
-    "vuex": "^3.1.2",
-    "lodash": "^4.17.11",
-    "pdfjs-dist": "^2.0.943"
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",

@@ -19,12 +19,12 @@ export default {
 </script>
 
 <style lang="scss">
-@import "assets/scss/main.scss";
 
 html,body{
   padding: 0;
   margin: 0;
-  /*font-size: 11px;*/
+  font-size: 11px;
+  box-sizing: border-box;
 }
 #app { 
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -4,7 +4,8 @@ import Start from '../views/Start.vue'
 import Home from '../views/Home.vue'
 import Book from '../views/Book.vue'
 import Categories from '../views/Categories.vue'
-import Profile from '../views/Profile.vue'
+import Profile from '../views/profile/Profile.vue'
+import EditProfile from '../views/profile/EditProfile.vue'
 import NotFound from '../views/404.vue'
 import ReadBook from "../views/ReadBook";
 
@@ -45,7 +46,13 @@ const routes = [
   {
     path:'/profile',
     name:'Profile',
-    component:Profile
+    component:Profile,
+
+  },
+  {
+    path:'/profile/edit',
+    name:"EditProfile",
+    component:EditProfile
   },
   {
     path:'*',

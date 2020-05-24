@@ -58,12 +58,11 @@
 			.title {
 				width: 100%;
 				text-align: center;
-				padding: 0.3rem 0.6rem;
+				padding: 0.6rem 0.6rem;
 
 				span {
 					font-family: $poppins;
-					font-size: 1.4rem;
-					font-weight: 600;
+					font-size: 1.5rem;
 					margin: auto;
 				}
 			}

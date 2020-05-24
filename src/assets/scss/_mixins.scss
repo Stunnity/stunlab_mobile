@@ -79,3 +79,12 @@
         cursor: pointer;
     }
 }
+
+@mixin header {
+    &.head {
+        font-weight: 800;
+        font-size: 1.2rem;
+        text-align: left;
+        margin:0 0 .6rem 1rem;
+    }
+}
